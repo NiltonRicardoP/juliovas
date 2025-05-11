@@ -11,18 +11,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    domains: ['v0.blob.com'],
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-    ],
-    unoptimized: true,
-  },
-  experimental: {
-    // Isso ajuda com problemas de compatibilidade em ambientes de contêiner
-    outputFileTracingRoot: process.env.NODE_ENV === "production" ? "/app" : undefined,
+    unoptimized: false, // Mudando para false para permitir otimização de imagens
   },
 };
 
