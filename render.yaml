@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: julio-vasconcelos
+    env: node
+    buildCommand: pnpm install --no-frozen-lockfile && pnpm run build
+    startCommand: pnpm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
