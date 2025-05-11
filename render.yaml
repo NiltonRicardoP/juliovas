@@ -2,8 +2,8 @@ services:
   - type: web
     name: julio-vasconcelos
     env: node
-    buildCommand: pnpm install --no-frozen-lockfile && pnpm run build
-    startCommand: pnpm start
+    buildCommand: npm install --legacy-peer-deps && npm run build
+    startCommand: npm start
     healthCheckPath: /
     envVars:
       - key: NODE_ENV
