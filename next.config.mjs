@@ -20,6 +20,10 @@ const nextConfig = {
     ],
     unoptimized: true,
   },
+  experimental: {
+    // Isso ajuda com problemas de compatibilidade em ambientes de contêiner
+    outputFileTracingRoot: process.env.NODE_ENV === "production" ? "/app" : undefined,
+  },
 };
 
 export default nextConfig;
