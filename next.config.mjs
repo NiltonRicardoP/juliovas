@@ -3,7 +3,6 @@ const nextConfig = {
   output: 'standalone',
   poweredByHeader: false,
   reactStrictMode: true,
-  swcMinify: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -11,7 +10,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: false, // Mudando para false para permitir otimização de imagens
+    unoptimized: true,
   },
 };
 
