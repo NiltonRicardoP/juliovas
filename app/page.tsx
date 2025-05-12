@@ -164,10 +164,10 @@ export default function Home() {
           <h2 className="mb-12 text-center text-3xl font-bold sm:text-4xl">Contato</h2>
 
           <div className="mx-auto max-w-3xl">
-            <p className="mb-8 text-center text-lg text-[#3b5fe2]">
+            {/* <p className="mb-8 text-center text-lg text-[#3b5fe2]">
               Toque nos ícones
               <span className="ml-2 inline-block animate-bounce text-2xl">👆</span>
-            </p>
+            </p> */}
 
             <div className="space-y-6">
               <a
